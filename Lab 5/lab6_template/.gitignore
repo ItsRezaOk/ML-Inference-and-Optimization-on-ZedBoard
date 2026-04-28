@@ -1,0 +1,9 @@
+vivado/*
+!vivado/*.tcl
+img_data/*
+lab3_venv/*
+log_data/*
+logs/*
+model_data/*
+train_data/*
+CNN_TinyImageNet.h5

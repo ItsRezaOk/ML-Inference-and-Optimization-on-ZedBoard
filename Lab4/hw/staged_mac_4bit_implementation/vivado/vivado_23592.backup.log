@@ -1,0 +1,818 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Oct 29 15:06:00 2025
+# Process ID: 23592
+# Current directory: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado
+# Command line: vivado
+# Log file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/vivado.log
+# Journal file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/remote/Xilinx/2020.1/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 7218.141 ; gain = 32.238 ; free physical = 22042 ; free virtual = 41876
+update_compile_order -fileset sources_1
+open_bd_design {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+Adding component instance block -- xilinx.com:ip:axi_fifo_mm_s:4.2 - axi_fifo_mm_s_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:module_ref:staged_mac:1.0 - staged_mac_0
+Successfully read diagram <staged_mac_bd> from BD file </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd>
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/sim/staged_mac_bd.v
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block staged_mac_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd.hwh
+Generated Block Design Tcl file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd_bd.tcl
+Generated Hardware Definition File /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP staged_mac_bd_auto_pc_0, cache-ID = 8d7bf0866b9b21d2; cache size = 4.479 MB.
+[Wed Oct 29 15:08:50 2025] Launched staged_mac_bd_staged_mac_0_0_synth_1, synth_1...
+Run output will be captured here:
+staged_mac_bd_staged_mac_0_0_synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/staged_mac_bd_staged_mac_0_0_synth_1/runme.log
+synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/synth_1/runme.log
+[Wed Oct 29 15:08:50 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 7517.641 ; gain = 67.379 ; free physical = 21736 ; free virtual = 41708
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7533.648 ; gain = 0.000 ; free physical = 21718 ; free virtual = 41819
+INFO: [Netlist 29-17] Analyzing 213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.14 . Memory (MB): peak = 8129.023 ; gain = 0.000 ; free physical = 21134 ; free virtual = 41235
+Restored from archive | CPU: 0.160000 secs | Memory: 2.996628 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.14 . Memory (MB): peak = 8129.023 ; gain = 0.000 ; free physical = 21134 ; free virtual = 41235
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8129.023 ; gain = 0.000 ; free physical = 21133 ; free virtual = 41235
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 72 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 56 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 8333.879 ; gain = 800.230 ; free physical = 20956 ; free virtual = 41061
+set_property pfm_name {} [get_files -all {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bit.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bit.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (/remote/Xilinx/2020.1/Vivado/2020.1/data/embeddedsw) loading 0 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bit.xsa
+open_bd_design {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+open_bd_design {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+startgroup
+set_property -dict [list CONFIG.M_TDATA_NUM_BYTES {2} CONFIG.TDATA_REMAP {tdata[15:0]}] [get_bd_cells axis_subset_converter_0]
+endgroup
+save_bd_design
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+update_module_reference staged_mac_bd_staged_mac_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'MO_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'SD_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'MO_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'ARESETN'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded staged_mac_bd_staged_mac_0_0 from staged_mac_v1_0 1.0 to staged_mac_v1_0 1.0
+WARNING: [IP_Flow 19-4706] Upgraded port 'SD_AXIS_TDATA' width 16 differs from original width 8
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'staged_mac_bd_staged_mac_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'staged_mac_bd_staged_mac_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+reset_run synth_1
+reset_run staged_mac_bd_axis_subset_converter_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/sim/staged_mac_bd.v
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block staged_mac_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd.hwh
+Generated Block Design Tcl file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd_bd.tcl
+Generated Hardware Definition File /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP staged_mac_bd_auto_pc_0, cache-ID = 8d7bf0866b9b21d2; cache size = 4.479 MB.
+[Wed Oct 29 15:37:56 2025] Launched staged_mac_bd_axis_subset_converter_0_0_synth_1, staged_mac_bd_staged_mac_0_0_synth_1, synth_1...
+Run output will be captured here:
+staged_mac_bd_axis_subset_converter_0_0_synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/staged_mac_bd_axis_subset_converter_0_0_synth_1/runme.log
+staged_mac_bd_staged_mac_0_0_synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/staged_mac_bd_staged_mac_0_0_synth_1/runme.log
+synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/synth_1/runme.log
+[Wed Oct 29 15:37:56 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8601.430 ; gain = 0.000 ; free physical = 17880 ; free virtual = 39618
+set_property pfm_name {} [get_files -all {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bitchanged.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bitchanged.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bitchanged.xsa
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_subset_converter_0_M_AXIS}]
+true
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {staged_mac_0_MO_AXIS}]
+true
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_subset_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets staged_mac_0_MO_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_0' with mode INTERFACE, 2 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK0 to the following sink clock pins :
+/system_ila_0/clk
+Debug Automation : Connecting source reset pin /rst_ps7_0_100M/peripheral_aresetn to the following sink reset pins :
+/system_ila_0/resetn
+Debug Automation : Connecting interface connection /axis_subset_converter_0_M_AXIS, to System ILA slot interface pin /system_ila_0/SLOT_0_AXIS for debug.
+Debug Automation : Connecting interface connection /staged_mac_0_MO_AXIS, to System ILA slot interface pin /system_ila_0/SLOT_1_AXIS for debug.
+endgroup
+save_bd_design
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ui/bd_65dee2cb.ui> 
+generate_target Simulation [get_files /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+Wrote  : </home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/sim/staged_mac_bd.v
+VHDL Output written to : /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v
+Exporting to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/hw_handoff/staged_mac_bd_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/hw_handoff/staged_mac_bd_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/synth/staged_mac_bd_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd.hwh
+Generated Block Design Tcl file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd_bd.tcl
+Generated Hardware Definition File /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.hwdef
+export_ip_user_files -of_objects [get_files /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] -directory /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/sim_scripts -ip_user_files_dir /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files -ipstatic_source_dir /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.cache/compile_simlib/modelsim} {questa=/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.cache/compile_simlib/questa} {ies=/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.cache/compile_simlib/ies} {xcelium=/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.cache/compile_simlib/xcelium} {vcs=/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.cache/compile_simlib/vcs} {riviera=/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/remote/Xilinx/2020.1/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'staged_mac_bd_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L axi_vip_v1_1_7 -L processing_system7_vip_v1_0_9 -L xilinx_vip -prj staged_mac_bd_wrapper_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_processing_system7_0_0/sim/staged_mac_bd_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_staged_mac_0_0/sim/staged_mac_bd_staged_mac_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_staged_mac_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tdata_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tdata_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tuser_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tuser_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tstrb_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tstrb_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tkeep_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tkeep_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tid_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tid_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tdest_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tdest_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/tlast_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tlast_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/hdl/top_staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/sim/staged_mac_bd_axis_subset_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_axis_subset_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/sim/staged_mac_bd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_JBBDI9
+INFO: [VRFC 10-311] analyzing module staged_mac_bd
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_ps7_0_axi_periph_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_0/sim/bd_8f44_ila_lib_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_8f44_ila_lib_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/bd_8f44_g_inst_0_gigantic_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_8f44_g_inst_0_gigantic_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_8f44_g_inst_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/sim/bd_8f44.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_8f44
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/sim/staged_mac_bd_system_ila_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_system_ila_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/sim/staged_mac_bd_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module staged_mac_bd_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj staged_mac_bd_wrapper_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/imports/hdl/staged_mac.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_axi_fifo_mm_s_0_0/sim/staged_mac_bd_axi_fifo_mm_s_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac_bd_axi_fifo_mm_s_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/sim/staged_mac_bd_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac_bd_rst_ps7_0_100M_0'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim'
+xelab -wto 62cf159ae5844a7da5eb0c4794242957 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_5 -L lib_fifo_v1_0_14 -L axi_fifo_mm_s_v4_2_3 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_7 -L processing_system7_vip_v1_0_9 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_21 -L axis_subset_converter_v1_1_21 -L gigantic_mux -L generic_baseblocks_v2_1_0 -L axi_data_fifo_v2_1_20 -L axi_register_slice_v2_1_21 -L axi_protocol_converter_v2_1_21 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot staged_mac_bd_wrapper_behav xil_defaultlib.staged_mac_bd_wrapper xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /remote/Xilinx/2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 62cf159ae5844a7da5eb0c4794242957 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_5 -L lib_fifo_v1_0_14 -L axi_fifo_mm_s_v4_2_3 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_7 -L processing_system7_vip_v1_0_9 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_21 -L axis_subset_converter_v1_1_21 -L gigantic_mux -L generic_baseblocks_v2_1_0 -L axi_data_fifo_v2_1_20 -L axi_register_slice_v2_1_21 -L axi_protocol_converter_v2_1_21 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot staged_mac_bd_wrapper_behav xil_defaultlib.staged_mac_bd_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5496]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5514]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10203]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10221]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10222]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.1_0602_1208/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_9_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7107]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7125]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7126]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_0_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2190]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_0_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2208]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axis_tdest' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2226]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axis_tuser' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2227]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_1_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2234]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_1_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2252]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_1_axis_tdest' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2270]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_1_axis_tuser' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2271]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_2_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2278]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_2_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2296]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_3_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2322]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_3_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2340]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_4_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2366]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_4_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2384]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_5_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2410]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_5_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2428]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_6_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2454]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_6_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2472]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_7_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2498]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_7_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2516]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_8_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2542]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_8_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2560]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_9_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2586]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'slot_9_axi_wstrb' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2591]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_9_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2604]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'slot_9_axis_tstrb' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2618]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'slot_9_axis_tkeep' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2619]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_10_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2630]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_10_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2648]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_11_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2674]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_11_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2692]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_12_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2718]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_12_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2736]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_13_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2762]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_13_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2780]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_14_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2806]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_14_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2824]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_15_axi_awcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2850]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_15_axi_arcache' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:2868]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 2 for port 'sel' [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v:3768]
+WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/sim/staged_mac_bd.v:447]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/sim/staged_mac_bd.v:615]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.ip_user_files/bd/staged_mac_bd/ip/staged_mac_bd_processing_system7_0_0/sim/staged_mac_bd_processing_system7_0_0.v:185]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3759]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4376]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4631]
+WARNING: [VRFC 10-3283] element index 64 into 'wrp_strb' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6084]
+WARNING: [VRFC 10-3283] element index 128 into 'wrp_strb' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10844]
+WARNING: [VRFC 10-3283] element index 128 into 'wrp_strb' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7722]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7935]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8074]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8171]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8190]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8331]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8336]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8341]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package axi_fifo_mm_s_v4_2_3.axi_fifo_mm_s_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=6,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_min_size=...]
+Compiling module xpm.xpm_cdc_sync_rst(INIT=0,INIT_SYN...
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_axis(CLOCKING_MODE="COM...
+Compiling architecture structure of entity axi_fifo_mm_s_v4_2_3.axis_fg [\axis_fg(c_family="zynq",c_depth...]
+Compiling architecture structure of entity axi_fifo_mm_s_v4_2_3.fifo [\fifo(c_family="zynq",c_ipif_dwi...]
+Compiling architecture structure of entity axi_fifo_mm_s_v4_2_3.fifo [\fifo(c_family="zynq",c_ipif_dwi...]
+Compiling module xpm.xpm_fifo_rst_default_1
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture beh of entity axi_fifo_mm_s_v4_2_3.ipic2axi_s [\ipic2axi_s(c_family="zynq",c_tx...]
+Compiling architecture structure of entity axi_fifo_mm_s_v4_2_3.axi_fifo_mm_s [\axi_fifo_mm_s(c_family="zynq",c...]
+Compiling architecture staged_mac_bd_axi_fifo_mm_s_0_0_arch of entity xil_defaultlib.staged_mac_bd_axi_fifo_mm_s_0_0 [staged_mac_bd_axi_fifo_mm_s_0_0_...]
+Compiling module axis_subset_converter_v1_1_21.axis_subset_converter_v1_1_21_co...
+Compiling module xil_defaultlib.tdata_staged_mac_bd_axis_subset_...
+Compiling module xil_defaultlib.tuser_staged_mac_bd_axis_subset_...
+Compiling module xil_defaultlib.tid_staged_mac_bd_axis_subset_co...
+Compiling module xil_defaultlib.tdest_staged_mac_bd_axis_subset_...
+Compiling module xil_defaultlib.tstrb_staged_mac_bd_axis_subset_...
+Compiling module xil_defaultlib.tkeep_staged_mac_bd_axis_subset_...
+Compiling module xil_defaultlib.tlast_staged_mac_bd_axis_subset_...
+Compiling module xil_defaultlib.top_staged_mac_bd_axis_subset_co...
+Compiling module xil_defaultlib.staged_mac_bd_axis_subset_conver...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ge...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ge...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ar...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ar...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_fm...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ar...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ar...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ar...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ar...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ss...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_in...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_sp...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_dd...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_oc...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_oc...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_re...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_re...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_7.axi_vip_v1_1_7_top(C_AXI_PROTOCO...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ax...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ax...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_7.axi_vip_v1_1_7_top(C_AXI_PROTOCO...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ax...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ax...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_7.axi_vip_v1_1_7_top(C_AXI_PROTOCO...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_in...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_af...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_af...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_af...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_af...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_7.axi_vip_v1_1_7_top(C_AXI_PROTOCO...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9_ax...
+Compiling module processing_system7_vip_v1_0_9.processing_system7_vip_v1_0_9(C_...
+Compiling module xil_defaultlib.staged_mac_bd_processing_system7...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axi_r...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axic_...
+Compiling module axi_register_slice_v2_1_21.axi_register_slice_v2_1_21_axi_r...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_b...
+Compiling module axi_protocol_converter_v2_1_21.axi_protocol_converter_v2_1_21_a...
+Compiling module xil_defaultlib.staged_mac_bd_auto_pc_0
+Compiling module xil_defaultlib.s00_couplers_imp_JBBDI9
+Compiling module xil_defaultlib.staged_mac_bd_ps7_0_axi_periph_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture staged_mac_bd_rst_ps7_0_100m_0_arch of entity xil_defaultlib.staged_mac_bd_rst_ps7_0_100M_0 [staged_mac_bd_rst_ps7_0_100m_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.staged_mac [staged_mac_default]
+Compiling module xil_defaultlib.staged_mac_bd_staged_mac_0_0
+Compiling module xil_defaultlib.bd_8f44_g_inst_0_gigantic_mux(C_...
+Compiling module xil_defaultlib.bd_8f44_g_inst_0
+Compiling module xil_defaultlib.bd_8f44_ila_lib_0
+Compiling module xil_defaultlib.bd_8f44
+Compiling module xil_defaultlib.staged_mac_bd_system_ila_0_0
+Compiling module xil_defaultlib.staged_mac_bd
+Compiling module xil_defaultlib.staged_mac_bd_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot staged_mac_bd_wrapper_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim/xsim.dir/staged_mac_bd_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 29 15:49:53 2025...
+run_program: Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 8726.051 ; gain = 0.000 ; free physical = 16762 ; free virtual = 38844
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "staged_mac_bd_wrapper_behav -key {Behavioral:sim_1:Functional:staged_mac_bd_wrapper} -tclbatch {staged_mac_bd_wrapper.tcl} -protoinst "protoinst_files/bd_8f44.protoinst" -protoinst "protoinst_files/staged_mac_bd.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_8f44.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/staged_mac_bd.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//axi_fifo_mm_s_0/AXI_STR_RXD
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//axi_fifo_mm_s_0/AXI_STR_TXD
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//axi_fifo_mm_s_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//axis_subset_converter_0/M_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//axis_subset_converter_0/S_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//processing_system7_0/M_AXI_GP0
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//ps7_0_axi_periph/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//ps7_0_axi_periph/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//ps7_0_axi_periph/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//ps7_0_axi_periph/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//ps7_0_axi_periph/s00_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//staged_mac_0/MO_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /staged_mac_bd_wrapper/staged_mac_bd_i//staged_mac_0/SD_AXIS
+WARNING: [Wavedata 42-559] Protocol instance "/staged_mac_bd_wrapper/staged_mac_bd_i//staged_mac_0/SD_AXIS" was created but is non-functional for the following reason(s):
+Port "TUSER" must be a logic vector
+
+Time resolution is 1 ps
+source staged_mac_bd_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+                   0 else checking line ......x
+WARNING: 5 ns staged_mac_bd_wrapper.staged_mac_bd_i.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'staged_mac_bd_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:52 ; elapsed = 00:00:29 . Memory (MB): peak = 8829.910 ; gain = 121.773 ; free physical = 11557 ; free virtual = 33654
+close_sim
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+Exporting to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/hw_handoff/staged_mac_bd_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/hw_handoff/staged_mac_bd_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/synth/staged_mac_bd_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP staged_mac_bd_auto_pc_0, cache-ID = 8d7bf0866b9b21d2; cache size = 4.530 MB.
+[Wed Oct 29 15:50:18 2025] Launched staged_mac_bd_system_ila_0_0_synth_1, synth_1...
+Run output will be captured here:
+staged_mac_bd_system_ila_0_0_synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/staged_mac_bd_system_ila_0_0_synth_1/runme.log
+synth_1: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/synth_1/runme.log
+[Wed Oct 29 15:50:18 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8829.910 ; gain = 0.000 ; free physical = 16685 ; free virtual = 38810
+open_hw_manager
+set_property pfm_name {} [get_files -all {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bitchanged.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bitchanged.xsa ...
+ERROR: [Common 17-70] Application Exception: Unable to get BIT file from implementation run. Please ensure implementation has been run all the way through Bitstream generation. Aborting write_hw_platform..
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:33:44
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-20:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248525658
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+Processing Interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processing Interface staged_mac_0_MO_AXIS_ila1_slot1
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 15:56:37
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Oct-29 15:56:49
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 15:56:50
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+INFO: [Common 17-14] Message 'Xicom 50-38' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+set_property pfm_name {} [get_files -all {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bit_changed.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bit_changed.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/sw/cpre487-587-dnn-framework-main/staged_mac_bd_wrapper_4bit_changed.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9973.461 ; gain = 0.000 ; free physical = 15456 ; free virtual = 37630
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:19:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:19:42
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:21:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:21:47
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:21:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:21:53
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:21:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:21:55
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:22:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:22:55
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:22:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:22:58
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:23:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:23:02
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Oct-29 16:23:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Oct-29 16:23:05
+Processed interface axis_subset_converter_0_M_AXIS_ila1_slot0
+Processed interface staged_mac_0_MO_AXIS_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_4bit_implementation/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248525658
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 29 18:15:12 2025...

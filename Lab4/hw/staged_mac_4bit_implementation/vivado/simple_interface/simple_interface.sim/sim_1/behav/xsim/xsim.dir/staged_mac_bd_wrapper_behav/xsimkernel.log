@@ -1,0 +1,7 @@
+Running: xsim.dir/staged_mac_bd_wrapper_behav/xsimk -simmode gui -wdb staged_mac_bd_wrapper_behav.wdb -simrunnum 0 -socket 40649
+Design successfully loaded
+Design Loading Memory Usage: 52328 KB (Peak: 52328 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 5397684 KB (Peak: 5397684 KB)
+Simulation CPU Usage: 1000 ms

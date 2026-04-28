@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/staged_mac_bd/ip/staged_mac_bd_axi_fifo_mm_s_0_0/sim/staged_mac_bd_axi_fifo_mm_s_0_0.vhd" \
+"../../../bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/sim/staged_mac_bd_rst_ps7_0_100M_0.vhd" \
+
+nosort

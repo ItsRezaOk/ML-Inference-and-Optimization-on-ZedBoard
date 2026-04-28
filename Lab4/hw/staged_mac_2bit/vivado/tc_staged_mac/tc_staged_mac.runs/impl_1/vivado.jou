@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Oct 27 17:34:41 2025
+# Process ID: 273270
+# Current directory: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_2bit/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1
+# Command line: vivado -log staged_mac.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source staged_mac.tcl -notrace
+# Log file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_2bit/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/staged_mac.vdi
+# Journal file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/staged_mac_2bit/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source staged_mac.tcl -notrace

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Oct 27 15:45:48 2025
+# Process ID: 186774
+# Current directory: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/piped_mac_4bit/vivado
+# Command line: vivado
+# Log file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/piped_mac_4bit/vivado/vivado.log
+# Journal file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/piped_mac_4bit/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+ls
+source tc_piped_mac_ip.tcl
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+launch_simulation -mode post-implementation -type functional
+source piped_mac.tcl
+ls
+source piped_mac8bit_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type functional
+source piped_mac.tcl
+source piped_mac8bit_tb.tcl
+close_sim

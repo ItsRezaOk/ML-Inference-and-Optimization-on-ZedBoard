@@ -1,0 +1,1 @@
+-wto "60550ca01c9543bab97319f603cc814e" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "staged_mac_func_impl" "xil_defaultlib.staged_mac" -log "elaborate.log" 

@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/piped_mac_4bit/vivado/tc_piped_mac/tc_piped_mac.sim/sim_1/impl/func/xsim/piped_mac_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'piped_mac'

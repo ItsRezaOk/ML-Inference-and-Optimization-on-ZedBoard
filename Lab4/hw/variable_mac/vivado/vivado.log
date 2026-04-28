@@ -1,0 +1,1112 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Oct 29 20:08:10 2025
+# Process ID: 273323
+# Current directory: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado
+# Command line: vivado
+# Log file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/vivado.log
+# Journal file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/remote/Xilinx/2020.1/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 7201.602 ; gain = 25.238 ; free physical = 21791 ; free virtual = 42463
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 10
+[Wed Oct 29 20:25:13 2025] Launched synth_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/synth_1/runme.log
+[Wed Oct 29 20:25:13 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+[Wed Oct 29 20:29:27 2025] Launched synth_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/synth_1/runme.log
+[Wed Oct 29 20:29:27 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+[Wed Oct 29 20:34:56 2025] Launched synth_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/synth_1/runme.log
+[Wed Oct 29 20:34:57 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+[Wed Oct 29 20:37:09 2025] Launched synth_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/synth_1/runme.log
+[Wed Oct 29 20:37:09 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7663.449 ; gain = 0.000 ; free physical = 18320 ; free virtual = 39185
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8279.078 ; gain = 0.000 ; free physical = 19348 ; free virtual = 40213
+Restored from archive | CPU: 0.020000 secs | Memory: 0.407494 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8279.078 ; gain = 0.000 ; free physical = 19348 ; free virtual = 40213
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8279.078 ; gain = 0.000 ; free physical = 19348 ; free virtual = 40213
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 8482.137 ; gain = 875.219 ; free physical = 19222 ; free virtual = 40091
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'staged_mac' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xvhdl --incr --relax -prj staged_mac_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /remote/Xilinx/2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(1,9)(1,7)(1,4)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0111")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111011")(0,7)\]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111000000000010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010101011010101100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101110111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010101011010100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000111011101110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101010011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000100010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100111100111111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100101010000000100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000111011111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100001001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110000001100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11011010000000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000011101110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010100111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111110000000011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010000001111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100000001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000111010001000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100110001111000101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00011111001111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000000000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011001100110...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110011001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111011101110111...]
+Compiling architecture structure of entity xil_defaultlib.staged_mac
+Built simulation snapshot staged_mac_func_impl
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/xsim.dir/staged_mac_func_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 29 20:39:04 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "staged_mac_func_impl -key {Post-Implementation:sim_1:Functional:staged_mac} -tclbatch {staged_mac.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source staged_mac.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'staged_mac_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 8648.246 ; gain = 166.109 ; free physical = 18895 ; free virtual = 39884
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Xilinx
+staged_mac_tb.tcl
+tc_staged_mac
+tc_variable_mac_ip.tcl
+vivado.jou
+vivado.log
+vivado_56375.backup.jou
+vivado_56375.backup.log
+vivado_pid273323.str
+source staged_mac_tb.tcl
+# relaunch_sim
+Command: launch_simulation -simset sim_1 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'staged_mac' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xvhdl --incr --relax -prj staged_mac_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /remote/Xilinx/2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(1,9)(1,7)(1,4)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0111")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111011")(0,7)\]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111000000000010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010101011010101100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101110111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010101011010100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000111011101110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101010011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000100010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100111100111111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100101010000000100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000111011111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100001001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110000001100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11011010000000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000011101110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010100111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111110000000011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010000001111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100000001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000111010001000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100110001111000101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00011111001111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000000000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011001100110...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110011001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111011101110111...]
+Compiling architecture structure of entity xil_defaultlib.staged_mac
+Built simulation snapshot staged_mac_func_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8648.246 ; gain = 0.000 ; free physical = 18555 ; free virtual = 39547
+# add_force {/staged_mac/ACLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+# add_force {/staged_mac/ARESETN} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/ARESETN} -radix hex {1 0ns}
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {2 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {3 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00203 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {4 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00202 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {5 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00001 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {6 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00303 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {7 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {8 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00102 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {9 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00203 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50 ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {A 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00204 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/ACLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+# add_force {/staged_mac/ARESETN} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/ARESETN} -radix hex {1 0ns}
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20011 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {2 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20011 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {3 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20023 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {4 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20022 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {5 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20001 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {6 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20033 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {7 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20011 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {8 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20012 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {9 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20023 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50 ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {A 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20024 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/ACLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+# add_force {/staged_mac/ARESETN} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/ARESETN} -radix hex {1 0ns}
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {2 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {3 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000A 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {4 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000B 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {5 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10006 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {6 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000A 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {7 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {8 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000B 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {9 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10009 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50 ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {A 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10007 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {0 0ns}
+# run 50ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+[Wed Oct 29 20:48:22 2025] Launched synth_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/synth_1/runme.log
+[Wed Oct 29 20:48:22 2025] Launched impl_1...
+Run output will be captured here: /home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8648.246 ; gain = 0.000 ; free physical = 18904 ; free virtual = 39896
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8648.246 ; gain = 0.000 ; free physical = 18773 ; free virtual = 39765
+Restored from archive | CPU: 0.020000 secs | Memory: 0.373383 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8648.246 ; gain = 0.000 ; free physical = 18773 ; free virtual = 39765
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'staged_mac' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xvhdl --incr --relax -prj staged_mac_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /remote/Xilinx/2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(1,9)(1,7)(1,4)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0111")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111011")(0,7)\]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111000000000010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010101011010101100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101110111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010101011010100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000111011101110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101010011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000100010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100111100111111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100101010000000100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000111011111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100001001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110000001100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11011010000000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000011101110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010100111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111110000000011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010000001111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100000001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000111010001000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100110001111000101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00011111001111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000000000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011001100110...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110011001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111011101110111...]
+Compiling architecture structure of entity xil_defaultlib.staged_mac
+Built simulation snapshot staged_mac_func_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "staged_mac_func_impl -key {Post-Implementation:sim_1:Functional:staged_mac} -tclbatch {staged_mac.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source staged_mac.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'staged_mac_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8762.301 ; gain = 114.055 ; free physical = 18406 ; free virtual = 39453
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Xilinx
+staged_mac_tb.tcl
+tc_staged_mac
+tc_variable_mac_ip.tcl
+vivado.jou
+vivado.log
+vivado_56375.backup.jou
+vivado_56375.backup.log
+vivado_pid273323.str
+source staged_mac_tb.tcl
+# relaunch_sim
+Command: launch_simulation -simset sim_1 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'staged_mac' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xvhdl --incr --relax -prj staged_mac_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim/staged_mac_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'staged_mac'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cam2022/CPRE-487_git/CPRE-4870/Lab4/hw/variable_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/impl/func/xsim'
+xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /remote/Xilinx/2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 6e98a6e556394a9cb8c99f1d2709b2c2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot staged_mac_func_impl xil_defaultlib.staged_mac -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(1,9)(1,7)(1,4)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0111")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111011")(0,7)\]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111000000000010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010101011010101100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101110111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010101011010100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000111011101110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101010011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101010101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000100010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100111100111111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100101010000000100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000111011111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000111011111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100001001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110000001100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11011010000000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100010001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000011101110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010100111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111110000000011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010000001111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011100000001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000111010001000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100110001111000101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00011111001111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000000000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011001100110...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110011001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111111001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111011101110111...]
+Compiling architecture structure of entity xil_defaultlib.staged_mac
+Built simulation snapshot staged_mac_func_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8762.301 ; gain = 0.000 ; free physical = 18321 ; free virtual = 39367
+# add_force {/staged_mac/ACLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+# add_force {/staged_mac/ARESETN} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/ARESETN} -radix hex {1 0ns}
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {2 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {3 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00203 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {4 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00202 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {5 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00001 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {6 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00303 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {7 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {8 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00102 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {9 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00203 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50 ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {A 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00204 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/ACLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+# add_force {/staged_mac/ARESETN} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/ARESETN} -radix hex {1 0ns}
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20011 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {2 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {00101 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20011 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {3 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20023 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {4 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20022 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {5 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20001 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {6 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20033 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {7 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20011 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {8 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20012 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {9 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20023 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50 ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {A 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {20024 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/ACLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+# add_force {/staged_mac/ARESETN} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/ARESETN} -radix hex {1 0ns}
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {2 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {3 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000A 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {4 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000B 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {5 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10006 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {6 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000A 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {0 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {7 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10005 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {8 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {1000B 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {9 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10009 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 50 ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {1 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TLAST} -radix hex {1 0ns}
+# add_force {/staged_mac/SD_AXIS_TID} -radix hex {A 0ns}
+# add_force {/staged_mac/SD_AXIS_TDATA} -radix hex {10007 0ns}
+# add_force {/staged_mac/SD_AXIS_TUSER} -radix hex {0 0ns}
+# run 10ns
+# add_force {/staged_mac/SD_AXIS_TVALID} -radix hex {0 0ns}
+# run 30ns
+# add_force {/staged_mac/MO_AXIS_TREADY} -radix hex {0 0ns}
+# run 50ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 29 21:00:36 2025...

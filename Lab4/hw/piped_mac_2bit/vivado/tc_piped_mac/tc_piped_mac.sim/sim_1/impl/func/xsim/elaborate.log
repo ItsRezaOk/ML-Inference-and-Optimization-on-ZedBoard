@@ -1,0 +1,38 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /remote/Xilinx/2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto c9516fcaaa9140658c3a7605c51c9126 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot piped_mac_func_impl xil_defaultlib.piped_mac -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10110111")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101000000000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110011101000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11001100110011000111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010100001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110000111100000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11010000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000001000...]
+Compiling architecture structure of entity xil_defaultlib.piped_mac
+Built simulation snapshot piped_mac_func_impl

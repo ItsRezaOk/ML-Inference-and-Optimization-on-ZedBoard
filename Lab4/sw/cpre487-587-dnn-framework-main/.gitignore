@@ -1,0 +1,13 @@
+workspace*
+*.log
+*.str
+build
+.Xil
+Packages
+.vscode/settings.json
+
+# Remove these when they work
+.vscode/launch.json
+.vscode/tasks.json
+perf.data
+lab4_venv/

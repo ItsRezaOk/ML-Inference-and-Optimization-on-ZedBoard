@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Oct 27 12:51:03 2025
+# Process ID: 11217
+# Current directory: /home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado
+# Command line: vivado
+# Log file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/vivado.log
+# Journal file: /home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {/home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+open_bd_design {/home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+report_power -name {power_1}
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+open_bd_design {/home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+delete_bd_objs [get_bd_cells system_ila_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_fifo_mm_s_0_AXI_STR_TXD] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets axis_subset_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets staged_mac_0_MO_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+delete_bd_objs [get_bd_cells system_ila_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_fifo_mm_s_0_AXI_STR_TXD] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets axis_subset_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets staged_mac_0_MO_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+delete_bd_objs [get_bd_cells system_ila_0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/cam2022/CPRE-487_git/CPRE-4870/Lab_3/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+refresh_design
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+report_utilization -name utilization_1
+report_power -name {power_1}

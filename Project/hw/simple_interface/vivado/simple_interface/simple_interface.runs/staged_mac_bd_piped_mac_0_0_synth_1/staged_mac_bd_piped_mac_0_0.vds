@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Dec  5 18:28:04 2025
+# Process ID: 297302
+# Current directory: /home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1
+# Command line: vivado -log staged_mac_bd_piped_mac_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source staged_mac_bd_piped_mac_0_0.tcl
+# Log file: /home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/staged_mac_bd_piped_mac_0_0.vds
+# Journal file: /home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source staged_mac_bd_piped_mac_0_0.tcl -notrace
+Command: synth_design -top staged_mac_bd_piped_mac_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'staged_mac_bd_piped_mac_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 297360
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2371.582 ; gain = 21.840 ; free physical = 11363 ; free virtual = 35258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_piped_mac_0_0' [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_piped_mac_0_0/synth/staged_mac_bd_piped_mac_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'piped_mac' [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/imports/hdl/piped_mac.vhd:53]
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_0' declared at '/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/ip/floating_point_0/synth/floating_point_0.vhd:59' bound to instance 'MAC_IP' of component 'floating_point_0' [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/imports/hdl/piped_mac.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'floating_point_0' [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/ip/floating_point_0/synth/floating_point_0.vhd:77]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 1 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 17 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 1 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 1 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at '/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/ip/floating_point_0/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/ip/floating_point_0/synth/floating_point_0.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_0' (36#1) [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/ip/floating_point_0/synth/floating_point_0.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'piped_mac' (37#1) [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/imports/hdl/piped_mac.vhd:53]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_piped_mac_0_0' (38#1) [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_piped_mac_0_0/synth/staged_mac_bd_piped_mac_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2487.637 ; gain = 137.895 ; free physical = 11311 ; free virtual = 35207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2502.480 ; gain = 152.738 ; free physical = 11327 ; free virtual = 35223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2502.480 ; gain = 152.738 ; free physical = 11327 ; free virtual = 35223
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2508.418 ; gain = 0.000 ; free physical = 11313 ; free virtual = 35209
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_piped_mac_0_0/staged_mac_bd_piped_mac_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_piped_mac_0_0/staged_mac_bd_piped_mac_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2590.293 ; gain = 0.000 ; free physical = 11221 ; free virtual = 35117
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  FDE => FDRE: 34 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2590.293 ; gain = 0.000 ; free physical = 11220 ; free virtual = 35116
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11277 ; free virtual = 35173
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11277 ; free virtual = 35173
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/dont_touch.xdc, line 12).
+Applied set_property DONT_TOUCH = true for inst/MAC_IP. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11277 ; free virtual = 35173
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'piped_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                get_op_a |                            00001 |                              000
+                get_op_b |                            00010 |                              001
+                fire_mac |                            00100 |                              010
+         wait_for_result |                            01000 |                              011
+            output_final |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'piped_mac'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11296 ; free virtual = 35193
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/MAC_IP/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized25) to 'inst/MAC_IP/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/MAC_IP/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized25) to 'inst/MAC_IP/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/MAC_IP/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized25) to 'inst/MAC_IP/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11282 ; free virtual = 35184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11178 ; free virtual = 35081
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 2590.293 ; gain = 240.551 ; free physical = 11158 ; free virtual = 35060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11146 ; free virtual = 35048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11133 ; free virtual = 35035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11133 ; free virtual = 35035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11137 ; free virtual = 35039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11137 ; free virtual = 35039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11137 ; free virtual = 35040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11138 ; free virtual = 35040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     7|
+|2     |DSP48E1 |     2|
+|4     |LUT1    |    11|
+|5     |LUT2    |   118|
+|6     |LUT3    |   216|
+|7     |LUT4    |   206|
+|8     |LUT5    |    97|
+|9     |LUT6    |   311|
+|10    |MUXCY   |   223|
+|11    |MUXF7   |     9|
+|12    |MUXF8   |     1|
+|13    |SRL16E  |    74|
+|14    |XORCY   |    96|
+|15    |FDE     |    33|
+|16    |FDRE    |  1402|
+|17    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.324 ; gain = 245.582 ; free physical = 11138 ; free virtual = 35040
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2595.324 ; gain = 157.770 ; free physical = 11162 ; free virtual = 35064
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2595.332 ; gain = 245.582 ; free physical = 11162 ; free virtual = 35064
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2595.332 ; gain = 0.000 ; free physical = 11214 ; free virtual = 35116
+INFO: [Netlist 29-17] Analyzing 371 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2627.340 ; gain = 0.000 ; free physical = 11200 ; free virtual = 35102
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 97 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 64 instances
+  FDE => FDRE: 33 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2627.340 ; gain = 277.664 ; free physical = 11201 ; free virtual = 35103
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/staged_mac_bd_piped_mac_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 278 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/cam2022/CPRE-487_git/CPRE-4870/Project/hw/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_piped_mac_0_0_synth_1/staged_mac_bd_piped_mac_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file staged_mac_bd_piped_mac_0_0_utilization_synth.rpt -pb staged_mac_bd_piped_mac_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 18:28:48 2025...
